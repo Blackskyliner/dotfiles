@@ -15,13 +15,6 @@ set showmatch "show matching brackets.
 set incsearch "incremental search
 set mouse=a "enable mouse usage (all modes)
 
-"
-" Plugins
-"
-if exists('$GOROOT')
-	set rtp+=$GOROOT/misc/vim
-endif
-
 let g:SuperTabDefaultCompletionType = 'context'
 
 call pathogen#infect() "pathogen runtimepath-handling

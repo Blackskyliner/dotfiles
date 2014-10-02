@@ -13,10 +13,3 @@ export EDITOR VISUAL
 if [ -d "$HOME/bin" ] && echo $PATH | grep -vq "$HOME/bin"; then
     PATH="$HOME/bin:$PATH"
 fi
-
-# golang
-export GOROOT=$HOME/go
-
-if [ -d "$GOROOT/bin" ] && echo $PATH | grep -vq "$GOROOT/bin"; then
-    PATH="$PATH:$GOROOT/bin"
-fi
